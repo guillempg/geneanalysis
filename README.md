@@ -33,14 +33,19 @@ Una aplicació web interactiva construïda amb [Streamlit](https://streamlit.io/
   - Diferenciació visual de DEGs (gens diferencialment expressats)
   - Ressaltat intuïtiu basat en etiquetes
 
+## Com executar l’aplicació fent servir Docker
+
+1. Assegura’t de tenir [Docker Desktop](https://www.docker.com/products/docker-desktop/) instal·lat.
+2. Si fas servir Windows, un cop instalat Docker Desktop arranca'l i si cal actualitzar WSL, obre una terminal i executa 
+la comanda `wsl --update` tal i com t'indica
+3. Executa l'arxiu run_app.bat (Windows) i obre un navegador web a la URL "http://localhost:8501"
+
+
 ## 📁 Estructura del projecte
 
 ```
 projecte_monica/
-├── data/
-│   ├── Gene_data_YYYYMMDD.xlsx    # Fitxer Excel d’entrada
-│   ├── data_normalized_counts.xlsx # Dades de comptes normalitzats (per boxplots)
-│   └── data_norm_counts_orgs.xlsx # Comptes normalitzats per organismes (per boxplots)
+├── data/                          # Arxius d'Excel amb les dades (buit a GitHub)
 ├── scripts/
 │   ├── app_integrada.py           # Integrador principal de l’aplicació
 │   ├── styling.py                 # Funcions d’estilització de taules
