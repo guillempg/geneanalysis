@@ -36,9 +36,11 @@ Una aplicació web interactiva construïda amb [Streamlit](https://streamlit.io/
 ## Com executar l’aplicació fent servir Docker
 
 1. Assegura’t de tenir [Docker Desktop](https://www.docker.com/products/docker-desktop/) instal·lat.
-2. Si fas servir Windows, un cop instalat Docker Desktop arranca'l i si cal actualitzar WSL, obre una terminal i executa 
-la comanda `wsl --update` tal i com t'indica
-3. Executa l'arxiu run_geneanalysis2.bat (Windows) i obre un navegador web a la URL "http://localhost:8501"
+2. A Windows, un cop instalat Docker Desktop, arranca'l i si cal actualitzar WSL, obre una terminal i executa 
+la comanda `wsl --update` tal i com t'indica Docker Desktop.
+3. Executa l'arxiu run_geneanalysis2.bat (Windows). S'ha de canviar la ruta on es troben els arxius d'Excel que vols fer servir,
+la imatge de Docker no les conté.
+4. Obre un navegador web a la URL "http://localhost:8501"
 
 
 ## 📁 Estructura del projecte
