@@ -42,6 +42,15 @@ la comanda `wsl --update` tal i com t'indica Docker Desktop.
 la imatge de Docker no les conté.
 4. Obre un navegador web a la URL "http://localhost:8501"
 
+## Com crear una imatge de Docker (només per a desenvolupadors)
+
+1. Al repository hi ha un Dockerfile que per a generar la imatge de Docker a partir d'aquest repository, només cal executar:
+  `docker build -t guillemp/geneanalysis:latest .`
+2. Un cop generada la imatge a la màquina local, cal etiquetar-la:
+  `docker tag guillemp/geneanalysis:latest guillemp/geneanalysis:latest`
+3. I un cop etiquetada, pujar-la al un repositori públic de DockerHub:
+  `docker push guillemp/geneanalysis:latest`
+   
 
 ## 📁 Estructura del projecte
 
