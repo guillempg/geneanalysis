@@ -38,7 +38,7 @@ Una aplicació web interactiva construïda amb [Streamlit](https://streamlit.io/
 1. Assegura’t de tenir [Docker Desktop](https://www.docker.com/products/docker-desktop/) instal·lat.
 2. Si fas servir Windows, un cop instalat Docker Desktop arranca'l i si cal actualitzar WSL, obre una terminal i executa 
 la comanda `wsl --update` tal i com t'indica
-3. Executa l'arxiu run_app.bat (Windows) i obre un navegador web a la URL "http://localhost:8501"
+3. Executa l'arxiu run_geneanalysis2.bat (Windows) i obre un navegador web a la URL "http://localhost:8501"
 
 
 ## 📁 Estructura del projecte
