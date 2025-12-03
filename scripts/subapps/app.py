@@ -98,6 +98,8 @@ def main():
         format=f"%.{decimals}g"
     )
 
+    st.sidebar.toggle("Force Y-axis to include 0", value=True, key="include_zero")
+
     st.sidebar.write("---")
     st.sidebar.header("Configuració per Dataset")
     

@@ -145,6 +145,11 @@ def main():
                         marker=dict(size=10, opacity=0.8),
                         line=dict(width=1)
                     )
+
+                    # Els gràfics estan centrats a Y=0 a menys que l'usuari indiqui el contrari
+                    if st.session_state.get("include_zero", True):
+                        fig.update_yaxes(rangemode="tozero")
+
                     st.plotly_chart(fig, use_container_width=True)
 
 if __name__ == "__main__":
