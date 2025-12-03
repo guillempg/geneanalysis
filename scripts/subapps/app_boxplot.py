@@ -75,6 +75,8 @@ def main():
         default=all_dataset_names
     )
 
+    st.sidebar.toggle("Force Y-axis to include 0", value=True, key="include_zero")
+
     # 5) Si no s'ha seleccionat com a mínim un gen i un dataset, no es fa res
     if not selected_genes or not selected_datasets:
         st.info("Selecciona com a mínim un gen i un dataset per veure els boxplots.")
